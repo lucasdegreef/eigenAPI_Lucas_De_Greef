@@ -16,3 +16,12 @@ app.add_middleware(
 @app.get("/percentage")
 async def get_random_percentage():
     return {"title": "https://coffee.alexflipnote.dev/random"}
+
+@app.get("/song/me")
+async def read_users():
+    return {"artist": "Against The Current",
+            "title": "Weapon"}
+
+@app.get("/song/neighbour")
+async def read_users():
+    return {"artist": "The Corrs","title": "Breathless"}
