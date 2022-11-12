@@ -19,7 +19,7 @@ app.add_middleware(
 async def get_random_percentage():
     return {"title": "https://coffee.alexflipnote.dev/random"}
 
-@app.get("/color")
+@app.get("/color/keuze")
 async def read_item():
     choice = randint(0,len(colors))
     colorSend = colors[choice]
