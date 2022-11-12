@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 
 app = FastAPI()
-colors = ["Oranje","Geel","Groen","Blauw","Voilet","Rood"]
+
 origins = ["*"]
 
 app.add_middleware(
@@ -21,6 +21,7 @@ async def get_random_percentage():
 
 @app.get("/color/keuze")
 async def read_item():
+    colors = ["Oranje","Geel","Groen","Blauw","Voilet","Rood"]
     choice = randint(0,len(colors))
     colorSend = colors[choice]
     return {"color": colorSend}
