@@ -1,9 +1,10 @@
 from fastapi import FastAPI
+from random import randint
 from fastapi.middleware.cors import CORSMiddleware
 import json
 
 app = FastAPI()
-
+colors = ["Oranje","Geel","Groen","Blauw","Voilet","Rood"]
 origins = ["*"]
 
 app.add_middleware(
@@ -18,10 +19,11 @@ app.add_middleware(
 async def get_random_percentage():
     return {"title": "https://coffee.alexflipnote.dev/random"}
 
-@app.get("/song/me")
-async def read_users():
-    return {"artist": "Against The Current",
-            "title": "Weapon"}
+@app.get("/color")
+async def read_item():
+    choice = randint(0,len(colors))
+    colorSend = colors[choice]
+    return {"color": colorSend}
 
 @app.get("/song/neighbour")
 async def read_users():
