@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Query
 from random import randint
 from fastapi.middleware.cors import CORSMiddleware
 import json
@@ -42,6 +42,12 @@ async def read_item():
     return {"color": colorSend}
 
 
-@app.get("/song/neighbour")
-async def read_users():
-    return {"artist": "The Corrs","title": "Breathless"}
+@app.get("/characterSTR/")
+async def read_item(number: int = Query(default=None,gt=0,le=83,description="This parameter how many animals")):
+    if number == None:
+        return {"character":"geef een getal in tekstvak"}
+    else:
+        echtURL = site + str(number)
+        linkOpen = urlopen(echtURL)
+        jsonSite = json.loads(linkOpen.read())
+        return {"character" : jsonSite.get("name")}
