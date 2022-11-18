@@ -1,7 +1,7 @@
 # Readme Eigen API Door Lucas De Greef
 
 ## Informatie over het gekozen thema
-  >ik heb gekozen voor het thema dat qoutes geeft van een aantal onderwerpen en in combunatie met characters dat in de starwars film voorkome.
+  >ik heb gekozen voor het thema dat qoutes geeft van een aantal onderwerpen en in combunatie met characters dat in de starwars film voorkomen.
   >het doel is hier van is om de gebruiker mentaal beter te laten voelen.
   >In de opdracht heb ik hiervoor 2 Gets en 1 Post toegpast.
   >
