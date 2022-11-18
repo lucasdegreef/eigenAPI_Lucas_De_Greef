@@ -7,6 +7,9 @@ from urllib.request import urlopen
 
 app = FastAPI()
 site = "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val="
+starwarsApi = "https://swapi.dev/api/people/"
+
+
 class Quote(BaseModel):
     onderwerp: str | None = None
 
@@ -43,7 +46,7 @@ async def read_item():
 
 
 @app.get("/characterSTR/")
-async def read_item(number: int = Query(default=None,gt=0,le=83,description="This parameter how many animals")):
+async def read_item(number: int = Query(default=None,gt=0,le=83,description="character name starwars")):
     if number == None:
         return {"character":"geef een getal in tekstvak"}
     else:
