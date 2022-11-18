@@ -50,7 +50,7 @@ async def read_item(number: int = Query(default=None,gt=0,le=83,description="cha
     if number == None:
         return {"character":"geef een getal in tekstvak"}
     else:
-        echtURL = site + str(number)
+        echtURL = starwarsApi + str(number)
         linkOpen = urlopen(echtURL)
         jsonSite = json.loads(linkOpen.read())
         return {"character" : jsonSite.get("name")}
