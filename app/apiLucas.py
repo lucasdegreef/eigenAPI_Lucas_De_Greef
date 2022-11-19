@@ -24,9 +24,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/quote/{thema}")
-async def read_item(thema : str):
-    postnaarApi = site + thema
+@app.get("/quote/{onderwerp}")
+async def read_item(onderwerp : str):
+    postnaarApi = site + onderwerp
     varibale = urlopen(postnaarApi)
     jsonSite = json.loads(varibale.read())
     jsonList = jsonSite.get("quotes")
