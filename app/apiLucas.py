@@ -8,7 +8,7 @@ from urllib.request import urlopen
 app = FastAPI()
 site = "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val="
 starwarsApi = "https://swapi.dev/api/people/"
-
+themas = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
 
 class Quote(BaseModel):
     onderwerp: str | None = None
@@ -37,12 +37,11 @@ async def read_item(quote:Quote):
 async def get_random_percentage():
     return {"title": "https://coffee.alexflipnote.dev/random"}
 
-@app.get("/color/keuze")
+@app.get("/thema")
 async def read_item():
-    colors = ["Oranje","Geel","Groen","Blauw","Voilet","Rood"]
-    choice = randint(0,len(colors))
-    colorSend = colors[choice]
-    return {"color": colorSend}
+    choice = randint(0, len(themas))
+    themaSend = themas[choice]
+    return {"Thema": themaSend}
 
 
 @app.get("/characterSTR/")
