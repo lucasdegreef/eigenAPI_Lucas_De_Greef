@@ -9,6 +9,7 @@ app = FastAPI()
 site = "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val="
 starwarsApi = "https://swapi.dev/api/people/"
 themas = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
+extraThema = []
 
 class Quote(BaseModel):
     onderwerp: str 
@@ -41,11 +42,10 @@ async def read_item():
 
 
 @app.get("/characterSTR/{number}")
-async def read_item(number: int = Query(default=None,gt=0,le=83,description="character name starwars")):
-    if number == None:
-        return {"character":"geef een getal in tekstvak"}
-    else:
-        echtURL = starwarsApi + str(number)
-        linkOpen = urlopen(echtURL)
-        jsonSite = json.loads(linkOpen.read())
-        return {"character" : jsonSite.get("name")}
+async def read_item(number: int):
+    if number > 83 or number <= 0:
+        return {"character" : "geef een getal tussen 1 en 83"}
+    echtURL = starwarsApi + str(number)
+    linkOpen = urlopen(echtURL)
+    jsonSite = json.loads(linkOpen.read())
+    return {"character" : jsonSite.get("name")}
