@@ -9,10 +9,14 @@ app = FastAPI()
 site = "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val="
 starwarsApi = "https://swapi.dev/api/people/"
 themas = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
-extraThema = []
+nieuwThema = []
+dummylistThema = []
+dummylistPersonen = []
+personen = []
 
-class Quote(BaseModel):
-    onderwerp: str 
+class Updatelijst(BaseModel):
+    onderwerp: str
+    persoon : str
 
 origins = ["*"]
 
@@ -23,6 +27,21 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.post("/nieuwthema")
+async def read_item(updatelijst:Updatelijst):
+    dummylistThema.append(updatelijst.onderwerp)
+    dummylistPersonen.append(updatelijst.persoon)
+    for i in dummylistThema:
+        if i not in nieuwThema:
+            nieuwThema.append(i)
+
+    for j in dummylistPersonen :
+        if j not in personen:
+            personen.append(j)
+
+    return {"geupdatlijst": nieuwThema,"personenlijst":personen}
+
 
 @app.get("/quote/{onderwerp}")
 async def read_item(onderwerp : str):
