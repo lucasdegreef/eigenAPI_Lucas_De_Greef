@@ -40,7 +40,7 @@ async def read_item():
     return {"Thema": themaSend}
 
 
-@app.get("/characterSTR/")
+@app.get("/characterSTR/{number}")
 async def read_item(number: int = Query(default=None,gt=0,le=83,description="character name starwars")):
     if number == None:
         return {"character":"geef een getal in tekstvak"}
