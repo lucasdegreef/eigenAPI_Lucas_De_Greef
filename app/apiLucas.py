@@ -8,7 +8,7 @@ from urllib.request import urlopen
 app = FastAPI()
 site = "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val="
 starwarsApi = "https://swapi.dev/api/people/"
-themas = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
+OnderwerpLijst = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
 nieuwThema = []
 dummylistThema = []
 dummylistPersonen = []
@@ -55,9 +55,9 @@ async def read_item(onderwerp : str):
 
 @app.get("/quote/thema")
 async def read_item():
-    choice = randint(0, len(themas)-1)
-    themaSend = themas[choice]
-    return {"Thema": themaSend}
+    choice = randint(0, len(OnderwerpLijst)-1)
+    onderwerpSend = OnderwerpLijst[choice]
+    return {"Thema": onderwerpSend}
 
 
 @app.get("/characterSTR/{number}")
