@@ -33,7 +33,7 @@ async def read_item(quote:Quote):
     return quoteJson
 
 
-@app.get("/thema")
+@app.get("/quote/thema")
 async def read_item():
     choice = randint(0, len(themas))
     themaSend = themas[choice]
