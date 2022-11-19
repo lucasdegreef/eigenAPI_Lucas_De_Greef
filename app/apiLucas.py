@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/quote" )
+@app.post("/quote", response_model=Quote)
 async def read_item(quote:Quote):
     postnaarApi = site + quote.onderwerp
     varibale = urlopen(postnaarApi)
