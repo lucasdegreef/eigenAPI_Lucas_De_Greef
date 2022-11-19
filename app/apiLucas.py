@@ -11,7 +11,7 @@ starwarsApi = "https://swapi.dev/api/people/"
 themas = ["beauty","peace","attitude","morning","music","mom","nature","patience","marriage","best"]
 
 class Quote(BaseModel):
-    onderwerp: str | None = None
+    onderwerp: str 
 
 origins = ["*"]
 
