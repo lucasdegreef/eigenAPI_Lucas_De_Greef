@@ -33,10 +33,6 @@ async def read_item(quote:Quote):
     return quoteJson
 
 
-@app.get("/percentage")
-async def get_random_percentage():
-    return {"title": "https://coffee.alexflipnote.dev/random"}
-
 @app.get("/thema")
 async def read_item():
     choice = randint(0, len(themas))
