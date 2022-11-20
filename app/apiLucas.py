@@ -18,7 +18,16 @@ class Updatelijst(BaseModel):
     onderwerp: str
     persoon : str
 
-origins = ["*"]
+origins = ["http://localhost",
+    "http://localhost:8080",
+    "https://localhost.tiangolo.com",
+    "http://127.0.0.1:5500",
+           "https://lucasdegreef.github.io",
+           "https://lucasdegreef.github.io.",
+           "https://api-lucas-lucasdegreef.cloud.okteto.net/",
+           "https://goquotes-api.herokuapp.com/api/v1/random/1?type=tag&val=",
+           "https://swapi.dev/api/people/"
+          ]
 
 app.add_middleware(
     CORSMiddleware,
