@@ -12,3 +12,5 @@
 * ### links
   * #### hosted API op Oketo
     * [Oketo endpoint Lucas De Greef](https://api-lucas-lucasdegreef.cloud.okteto.net)
+    * [Oketo endpoint Lucas De Greef quote](https://api-lucas-lucasdegreef.cloud.okteto.net/quote/peace)
+    * [Oketo endpoint Lucas De Greef Starwars karkater](https://api-lucas-lucasdegreef.cloud.okteto.net/characterSTR/1)
