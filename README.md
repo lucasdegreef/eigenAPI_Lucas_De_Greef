@@ -11,4 +11,4 @@
   > Als laatste de POST. Dit zorgt ervoor dat de ideeën van de gebruikers samen met hun namen verstuurd worden naar de API.
 * ### links
   * #### hosted API op Oketo
-    * [Oketo endpoint](https://api-lucas-lucasdegreef.cloud.okteto.net)
+    * [Oketo endpoint Lucas De Greef](https://api-lucas-lucasdegreef.cloud.okteto.net)
