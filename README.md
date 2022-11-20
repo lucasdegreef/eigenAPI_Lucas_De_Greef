@@ -17,3 +17,6 @@
   * #### Github repositorys
      * [repository frontend](https://github.com/lucasdegreef/lucasdegreef.github.io)
      * [repository API](https://github.com/lucasdegreef/eigenAPI_Lucas_De_Greef)
+## Informatie over het gekozen onderwerp
+  >Screenshot openAPI docs
+![screencapture-api-lucas-lucasdegreef-cloud-okteto-net-docs-2022-11-20-19_35_57](https://user-images.githubusercontent.com/82623056/202921813-e52b6cf2-7fc8-4cdb-b059-b7a6dadfdbe1.png)
