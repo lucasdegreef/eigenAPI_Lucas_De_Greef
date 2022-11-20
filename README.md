@@ -23,5 +23,5 @@
   ![Schermafbeelding 2022-11-20 203910](https://user-images.githubusercontent.com/82623056/202922520-4bb4f013-c600-4e17-a2ce-d7b8c588b7f9.png)
   <Screenshot 2de GET  
   ![Schermafbeelding 2022-11-20 203603](https://user-images.githubusercontent.com/82623056/202922586-6eceda65-7954-4491-854c-0c3a4c6bbccb.png)
-  <Screenshot POST  
+  <Screenshot POST   
   ![Schermafbeelding 2022-11-20 204108](https://user-images.githubusercontent.com/82623056/202922635-43c8ab77-1f55-4154-b6af-e5fbac8c4c97.png)
