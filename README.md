@@ -16,6 +16,12 @@
     * [Website Basisproject Lucas De Greef](https://lucasdegreef.github.io/)
   * #### Github repositorys
      * [repository frontend](https://github.com/lucasdegreef/lucasdegreef.github.io)
-## Informatie over het gekozen onderwerp
+## Screenshots
   >Screenshot openAPI docs
 ![screencapture-api-lucas-lucasdegreef-cloud-okteto-net-docs-2022-11-20-19_35_57](https://user-images.githubusercontent.com/82623056/202921813-e52b6cf2-7fc8-4cdb-b059-b7a6dadfdbe1.png)
+  <Screenshot 1ste GET
+  ![Schermafbeelding 2022-11-20 203046](https://user-images.githubusercontent.com/82623056/202922050-faa91909-b252-4b9d-bfd3-4e847910461c.png)
+  <Screenshot 2de GET
+  ![Schermafbeelding 2022-11-20 203305](https://user-images.githubusercontent.com/82623056/202922147-6b8aae8c-cdc9-4125-b02c-76c181a11c3c.png)
+  <Screenshot POST
+  ![Schermafbeelding 2022-11-20 202738](https://user-images.githubusercontent.com/82623056/202922167-ff71af85-c257-4c34-a750-34f6b270d333.png)
