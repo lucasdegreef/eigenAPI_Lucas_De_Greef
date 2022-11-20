@@ -20,4 +20,4 @@
   >Screenshot openAPI docs
 ![screencapture-api-lucas-lucasdegreef-cloud-okteto-net-docs-2022-11-20-19_35_57](https://user-images.githubusercontent.com/82623056/202921813-e52b6cf2-7fc8-4cdb-b059-b7a6dadfdbe1.png)
   <Screenshot 1ste GET
-![Schermafbeelding 2022-11-20 203910](https://user-images.githubusercontent.com/82623056/202922520-4bb4f013-c600-4e17-a2ce-d7b8c588b7f9.png)
+  ![Schermafbeelding 2022-11-20 203910](https://user-images.githubusercontent.com/82623056/202922520-4bb4f013-c600-4e17-a2ce-d7b8c588b7f9.png)
