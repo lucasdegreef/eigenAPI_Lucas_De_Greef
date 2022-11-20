@@ -14,3 +14,6 @@
     * [Oketo endpoint Lucas De Greef](https://api-lucas-lucasdegreef.cloud.okteto.net)
   * #### hosted frontend
     * [Website Basisproject Lucas De Greef](https://lucasdegreef.github.io/)
+  * #### Github repositorys
+     * [repository frontend](https://github.com/lucasdegreef/lucasdegreef.github.io)
+     * [repository API](https://github.com/lucasdegreef/eigenAPI_Lucas_De_Greef)
